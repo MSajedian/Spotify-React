@@ -367,6 +367,7 @@
   z-index: -1;
   width: calc(100vw - 200px);
   box-sizing: border-box;
+  padding-bottom: 50px;
 }
 
 .sidebarBottomInfoSignUp{

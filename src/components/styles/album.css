@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  #Album-Page {
+    min-height: 100vh;
+    background-color: #121212;
+    padding: 30px 20px;
+  }
+  * {
+    font-family: "Gothic A1", sans-serif;
+  }
+  .dot {
+    font-family: sans-serif;
+  }
+  .Album-Title {
+    font-family: "Gothic A1";
+    font-weight: 700;
+    font-size: large;
+  }
+  .btn-play,
+  .btn-primary {
+    padding: 10px 60px;
+    background-color: #1db954;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .Icons{
+    background: transparent;
+    fill: white;
+  }
+  .Artists,
+  .Album-Year-Num-Songs,
+  .song-artists {
+    color: gray;
+  }

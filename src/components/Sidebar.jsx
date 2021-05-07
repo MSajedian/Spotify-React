@@ -23,7 +23,7 @@ export default class Sidebar extends Component {
                                 <Link to="/"><i className="fas fa-home" aria-hidden="true"></i>Home</Link>
                             </li>
                             <li>
-                                <Link to="/"><i className="fas fa-search" aria-hidden="true"></i>Search</Link>
+                                <Link to="/search"><i className="fas fa-search" aria-hidden="true"></i>Search</Link>
                             </li>
                             <li>
                                 <Link to="/artist"><i className="fas fa-music" aria-hidden="true"></i>Artist</Link>

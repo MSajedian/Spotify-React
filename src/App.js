@@ -6,6 +6,7 @@ import Artist from './components/Artist';
 import Album from './components/Album';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
+import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "/album",
     main: () => <Album />
+  },
+  {
+    path: "/search",
+    main: () => <Search />
   }
 ];
 
@@ -30,7 +35,7 @@ export default function App() {
       <Router>
         <div style={{ display: "flex" }}>
             <Sidebar />
-          <div style={{ flex: 1, }}>
+          <div style={{ flex: 1, paddingBottom:"100px"}}>
             <Switch>
               {routes.map((route, index) => (
                 <Route
