@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class Sidebar extends Component {
     constructor(props) {
@@ -7,62 +8,88 @@ export default class Sidebar extends Component {
     }
     render() {
         return (
-            <div class="wrapperSideBar d-none d-sm-block d-md-block d-lg-block">
+            <div className="wrapperSideBar d-none d-sm-block d-md-block d-lg-block">
                 <nav id="sidebar">
-                    <div class="sidebarHeadings">
-                        <div class="sidebar-header">
+                    <div className="sidebarHeadings">
+                        <div className="sidebar-header">
                             <img
                                 src="Img/Spotifylogo.png"
-                                class="sidebarLogo"
+                                className="sidebarLogo"
                                 alt="Spotify Logo White Trasparent"
                             />
                         </div>
-                        <ul class="list-unstyled components">
-                            <li class="active">
-                                <a href="#homeSubmenu" class=""
-                                ><i class="fas fa-home" aria-hidden="true"></i>Home</a>
+                        <ul className="list-unstyled components" style={{ listStyleType: "none" }}>
+                            <li className="active">
+                                <Link to="/"><i className="fas fa-home" aria-hidden="true"></i>Home</Link>
                             </li>
                             <li>
-                                <a href="/"><i class="fas fa-search" aria-hidden="true"></i>Search</a>
+                                <Link to="/"><i className="fas fa-search" aria-hidden="true"></i>Search</Link>
                             </li>
                             <li>
-                                <a href="#pageSubmenu" class="">
-                                    <i class="fas fa-bars" aria-hidden="true"></i>Pages</a>
+                                <Link to="/artist"><i className="fas fa-music" aria-hidden="true"></i>Artist</Link>
                             </li>
+                            <li>
+                                <Link to="/album"><i className="fas fa-compact-disc" aria-hidden="true"></i>Album</Link>
+                            </li>
+                            {/* <li>
+                                <a className="" data-toggle="collapse" href="#collapsePages" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <i className="fas fa-bars"></i>Pages
+                                </a>
+                            </li> */}
+
+                            {/* <div className="collapse" id="collapsePages">
+                                <li>
+                                    <Link to="/artist"><i className="fas fa-music" aria-hidden="true"></i>Artist</Link>
+                                </li>
+                                <li>
+                                    <Link to="/album"><i className="fas fa-compact-disc" aria-hidden="true"></i>Album</Link>
+                                </li>
+                            </div> */}
+
+
+
+                            {/* <div class="collapse" id="collapsePages">
+                                <li>
+                                    <Link to="/artist"><i class="fas fa-music" aria-hidden="true"></i>Artist</Link>
+                                </li>
+                                <li>
+                                    <Link to="/album"><i class="fas fa-compact-disc" aria-hidden="true"></i>Album</Link>
+                                </li>
+                            </div> */}
                         </ul>
                     </div>
 
-                    <div id="loggedInBottomMenu" class="sidebarBottomInfo d-none text-left">
-                        <p class="sidebarBottomInfoInstalltheApp">
-                            <i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i>Install the app
+                    <div id="loggedInBottomMenu" className="sidebarBottomInfo d-none text-left">
+                        <p className="sidebarBottomInfoInstalltheApp">
+                            <i className="far fa-arrow-alt-circle-down" aria-hidden="true"></i>Install the app
           </p>
-                        <div class="sidebarUserImageContainer dropup">
+                        <div className="sidebarUserImageContainer dropup">
                             <button
-                                class="btn dropdown-toggle"
+                                className="btn dropdown-toggle"
                                 type="button"
                                 id="dropdownMenuButton"
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
                                 aria-expanded="false"
                             >
-                                <img src="Img/Userimage.jpeg" class="sidebarUserImage" alt="" />
-                                <span class="sidebarUserText">Diego Banovaz</span>
+                                <img src="Img/Userimage.jpeg" className="sidebarUserImage" alt="" />
+                                <span className="sidebarUserText">Diego Banovaz</span>
                             </button>
                             <div
-                                class="dropdown-menu dropdownSettings"
+                                className="dropdown-menu dropdownSettings"
                                 aria-labelledby="dropdownMenuButton"
                             >
-                                <a class="dropdown-item textDropUp" href="/">Settings</a>
-                                <a class="dropdown-item textDropUp" href="/" id="logOutButton">Logout</a>
+                                <a className="dropdown-item textDropUp" href="/">Settings</a>
+                                <a className="dropdown-item textDropUp" href="/" id="logOutButton">Logout</a>
                             </div>
                         </div>
                     </div>
 
-                    <div id="loggedOutBottomMenu" class="">
-                        <div class="sidebarBottomInfo d-flex flex-column">
+                    <div id="loggedOutBottomMenu" className="">
+                        <div className="sidebarBottomInfo d-flex flex-column">
                             <button
                                 type="button"
-                                class="btn sidebarBottomInfoSignUp"
+                                className="btn sidebarBottomInfoSignUp"
                                 data-toggle="modal"
                                 data-target="#signUpModal"
                             >
@@ -70,7 +97,7 @@ export default class Sidebar extends Component {
             </button>
                             <button
                                 type="button"
-                                class="btn sidebarBottomInfoLogin"
+                                className="btn sidebarBottomInfoLogin"
                                 data-toggle="modal"
                                 data-target="#logInModal"
                             >
@@ -78,9 +105,9 @@ export default class Sidebar extends Component {
             </button>
                             <div>
                                 <ul>
-                                    <li class="sidebarBottomInfoliFirst">Cookie</li>
-                                    <li class="sidebarBottomInfoliMiddle">Privacy</li>
-                                    <li class="sidebarBottomInfoliEnd">Policy</li>
+                                    <li className="sidebarBottomInfoliFirst">Cookie</li>
+                                    <li className="sidebarBottomInfoliMiddle">Privacy</li>
+                                    <li className="sidebarBottomInfoliEnd">Policy</li>
                                 </ul>
                             </div>
                         </div>

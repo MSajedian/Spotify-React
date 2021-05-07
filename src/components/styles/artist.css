@@ -1,0 +1,158 @@
+
+.album,
+.contentSection {
+  background-color: #121212 !important;
+}
+
+.container-img-artist {
+  position: relative;
+  width: calc(100vw - 200px);
+  height: 40vh;
+  margin: 0;
+  position: relative;
+}
+
+.container-img-artist::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 40vh;
+  width: calc(100vw - 200px);
+  background: linear-gradient(
+    0deg,
+    rgb(18, 18, 18, 1) 0%,
+    rgb(18, 18, 18, 0.9) 5%,
+    rgba(18, 18, 18, 0.97) 10%,
+    rgba(18, 18, 18, 0) 100%
+  );
+  z-index: 1;
+}
+.img-artist {
+  position: absolute;
+  width: calc(100vw - 200px);
+  height: 40vh;
+  z-index: 1;
+}
+
+.text-artist-listener {
+  font-size: 10px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  font-family: lineto-circular-pro-book;
+  z-index: 2;
+}
+.text-artist-title {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-family: lineto-circular-pro-book;
+  z-index: 2;
+}
+.btn-place {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+.btnArtistPage {
+  font-size: 8px;
+  padding: 0% 40%;
+  margin: 0% 5%;
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-weight: normal;
+}
+.btn-play {
+  background-color: #1db954;
+}
+.btn-play:hover {
+  color: black;
+  background-color: white;
+}
+.btn-follow {
+  border: 1px solid white;
+  background-color: rgb(18, 18, 18, 0.5);
+}
+.btn-follow:hover {
+  color: rgb(18, 18, 18, 0.5);
+  background-color: white;
+}
+.dots {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  fill: white;
+  transform: scale(0.65);
+}
+.dots:hover {
+  color: black;
+  background-color: white;
+}
+.Page-navigation {
+  position: relative;
+  top: -30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background-color: rgb(18, 18, 18);
+}
+
+.page-link {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 8px;
+}
+.page-item .page-link {
+  color: gray;
+  background-color: transparent;
+}
+.page-item.active .page-link {
+  color: white;
+  background-color: transparent;
+}
+.page-item.active .link-borderBottom {
+  border-bottom: 2px solid green;
+  position: absolute;
+  right: 35%;
+  bottom: 3px;
+  left: 35%;
+}
+.card,
+.card-body {
+  color: white;
+  border: none;
+  background: transparent !important;
+  font-weight: bold;
+}
+.albums-heading {
+  background-color: #121212;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+.card-text {
+  font-family: lineto-circular-pro-book;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+.card-artist {
+  margin-top: 5%;
+  padding-top: 0;
+  color: gray;
+  font-size: 12px;
+  font-family: lineto-circular-pro-book;
+  font-weight: normal;
+}
