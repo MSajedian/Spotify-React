@@ -7,8 +7,8 @@ class Search extends Component {
     }
     render() {
         return (
-            <>
-                <div className="contentSection pl-4 pr-1">
+            <div className="contentSection pl-4 pr-1">
+                <div className="container">
                     <div className="form-outline" style={{ paddingTop: "10px" }}>
                         <input
                             id="search-input"
@@ -28,15 +28,7 @@ class Search extends Component {
                         </button>
                     </div>
                 </div>
-                <div style={{ height: "100px" }}></div>
-
-                <div className="container">
-                    <h2 className="albums-heading mb-3">Albums</h2>
-                    <div className="albums row"></div>
-                </div>
-                <h2 className="ml-1 mb-3">Songs</h2>
-                <div className="songs col-12 text-white"></div>
-            </>
+            </div>
         );
     }
 }
