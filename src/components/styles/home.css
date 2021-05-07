@@ -7,7 +7,7 @@ body {
   body {
     height: 340vh !important;
   }
-  .Page-navigation ul li a {
+  .Page-navigation-home ul li a {
     font-size: 10px;
   }
 }
@@ -16,7 +16,7 @@ body {
     width: 100vw !important;
     height: 650vh;
   }
-  .Page-navigation {
+  .Page-navigation-home {
     padding-top: 50px;
   }
   .titleMobileHomepage {
@@ -29,7 +29,7 @@ body {
     width: 100vw !important;
     height: 650vh;
   }
-  .Page-navigation {
+  .Page-navigation-home {
     padding-top: 50px;
   }
   .titleMobileHomepage {
@@ -38,7 +38,7 @@ body {
   }
 }
 @media (max-width: 399px) {
-  .Page-navigation ul li a {
+  .Page-navigation-home ul li a {
     font-size: 8px;
   }
   .titleMobileHomepage {
