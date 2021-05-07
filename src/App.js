@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Home from './components/Home';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './components/Home';
 import Artist from './components/Artist';
 import Album from './components/Album';
 import Footer from './components/Footer';
